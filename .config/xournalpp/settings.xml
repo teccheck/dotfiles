@@ -6,7 +6,7 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Xournal++ Copy"/>
-  <property name="lastSavePath" value="/home/christoph/Repositories/cct-group/chrisw_notes/algo1/ztut"/>
+  <property name="lastSavePath" value="/mnt/data/Repositories/cct-group/chrisw-notes/tgi/abs"/>
   <property name="lastOpenPath" value="/home/christoph/Downloads"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
@@ -19,7 +19,7 @@
   <property name="maximized" value="true"/>
   <property name="showToolbar" value="true"/>
   <property name="showSidebar" value="false"/>
-  <property name="sidebarWidth" value="50"/>
+  <property name="sidebarWidth" value="149"/>
   <property name="sidebarNumberingStyle" value="1"/>
   <property name="sidebarOnRight" value="false"/>
   <property name="scrollbarOnLeft" value="false"/>
@@ -56,6 +56,7 @@
   <property name="darkTheme" value="false"/>
   <property name="useStockIcons" value="false"/>
   <property name="disableScrollbarFadeout" value="false"/>
+  <property name="disableAudio" value="false"/>
   <!--Hides scroolbars in the main window, allowed values: "none", "horizontal", "vertical", "both"-->
   <property name="scrollbarHideType" value="none"/>
   <property name="autoloadMostRecent" value="false"/>
@@ -187,7 +188,18 @@
       <attribute name="deviceSource" type="int" value="0"/>
     </data>
   </data>
-  <data name="lastUsedPageBgColor"/>
+  <data name="lastUsedPageBgColor">
+    <attribute name="color00" type="hex" value="ff242424"/>
+    <attribute name="color01" type="hex" value="ffffffff"/>
+    <attribute name="color02" type="hex" value="ffffffff"/>
+    <attribute name="color03" type="hex" value="ffffffff"/>
+    <attribute name="color04" type="hex" value="ffffffff"/>
+    <attribute name="color05" type="hex" value="ffffffff"/>
+    <attribute name="color06" type="hex" value="ffffffff"/>
+    <attribute name="color07" type="hex" value="ffffffff"/>
+    <attribute name="color08" type="hex" value="ffffffff"/>
+    <attribute name="count" type="int" value="9"/>
+  </data>
   <data name="tools">
     <attribute name="current" type="string" value="pen"/>
     <data name="drawArrow">
@@ -227,8 +239,8 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="3584e4"/>
-      <attribute name="drawingType" type="string" value="arrow"/>
+      <attribute name="color" type="hex" value="000000"/>
+      <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
       <attribute name="size" type="string" value="MEDIUM"/>
