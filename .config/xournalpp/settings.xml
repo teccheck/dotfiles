@@ -6,8 +6,6 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Xournal++ Copy"/>
-  <property name="lastSavePath" value="/mnt/data/Repositories/cct-group/chrisw-notes/tgi/abs"/>
-  <property name="lastOpenPath" value="/home/christoph/Downloads"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -239,7 +237,11 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
+<<<<<<< Updated upstream
       <attribute name="color" type="hex" value="ffffff"/>
+=======
+      <attribute name="color" type="hex" value="000000"/>
+>>>>>>> Stashed changes
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
