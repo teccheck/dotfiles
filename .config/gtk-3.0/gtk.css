@@ -1,4 +1,16 @@
 /* Xournalpp */
 #sidebarContents {
-  background-color: @view_bg_color;
+    background-color: @view_bg_color;
+}
+
+.close {
+    color: @destructive_color;
+}
+
+.maximize {
+    color: @warning_color;
+}
+
+.minimize {
+    color: @success_color;
 }
