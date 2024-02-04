@@ -12,12 +12,12 @@
   <property name="zoomStep" value="10"/>
   <property name="zoomStepScroll" value="2"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="1106"/>
-  <property name="mainWndHeight" value="1011"/>
+  <property name="mainWndWidth" value="800"/>
+  <property name="mainWndHeight" value="600"/>
   <property name="maximized" value="true"/>
   <property name="showToolbar" value="true"/>
   <property name="showSidebar" value="false"/>
-  <property name="sidebarWidth" value="149"/>
+  <property name="sidebarWidth" value="50"/>
   <property name="sidebarNumberingStyle" value="1"/>
   <property name="sidebarOnRight" value="false"/>
   <property name="scrollbarOnLeft" value="false"/>
@@ -131,12 +131,12 @@
   <property name="latexSettings.sourceViewAutoIndent" value="true"/>
   <property name="latexSettings.sourceViewSyntaxHighlight" value="true"/>
   <property name="latexSettings.sourceViewShowLineNumbers" value="false"/>
-  <property name="font" font="Noto Sans Medium" size="14"/>
+  <property name="font" font="Sans" size="12"/>
   <data name="buttonConfig">
     <data name="default">
       <attribute name="color" type="hex" value="ff000000"/>
       <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="medium"/>
+      <attribute name="size" type="string" value="thin"/>
       <attribute name="tool" type="string" value="pen"/>
     </data>
     <data name="eraser">
@@ -173,10 +173,6 @@
       <attribute name="deviceClass" type="int" value="3"/>
       <attribute name="deviceSource" type="int" value="2"/>
     </data>
-    <data name="Wayland Finger Scrolling">
-      <attribute name="deviceClass" type="int" value="1"/>
-      <attribute name="deviceSource" type="int" value="6"/>
-    </data>
     <data name="Wayland Pointer">
       <attribute name="deviceClass" type="int" value="1"/>
       <attribute name="deviceSource" type="int" value="0"/>
@@ -185,18 +181,6 @@
       <attribute name="deviceClass" type="int" value="1"/>
       <attribute name="deviceSource" type="int" value="0"/>
     </data>
-  </data>
-  <data name="lastUsedPageBgColor">
-    <attribute name="color00" type="hex" value="ff242424"/>
-    <attribute name="color01" type="hex" value="ffffffff"/>
-    <attribute name="color02" type="hex" value="ffffffff"/>
-    <attribute name="color03" type="hex" value="ffffffff"/>
-    <attribute name="color04" type="hex" value="ffffffff"/>
-    <attribute name="color05" type="hex" value="ffffffff"/>
-    <attribute name="color06" type="hex" value="ffffffff"/>
-    <attribute name="color07" type="hex" value="ffffffff"/>
-    <attribute name="color08" type="hex" value="ffffffff"/>
-    <attribute name="count" type="int" value="9"/>
   </data>
   <data name="tools">
     <attribute name="current" type="string" value="pen"/>
@@ -227,21 +211,17 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="highlighter">
-      <attribute name="color" type="hex" value="33d17a"/>
+      <attribute name="color" type="hex" value="ffffff00"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="BIG"/>
+      <attribute name="size" type="string" value="MEDIUM"/>
     </data>
     <data name="image">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-<<<<<<< Updated upstream
-      <attribute name="color" type="hex" value="ffffff"/>
-=======
       <attribute name="color" type="hex" value="000000"/>
->>>>>>> Stashed changes
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
@@ -278,7 +258,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="text">
-      <attribute name="color" type="hex" value="000000"/>
+      <attribute name="color" type="hex" value="ff000000"/>
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="verticalSpace">
