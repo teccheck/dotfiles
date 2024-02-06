@@ -3,6 +3,7 @@
     background-color: @view_bg_color;
 }
 
+/*
 .close {
     color: @destructive_color;
 }
@@ -14,3 +15,4 @@
 .minimize {
     color: @success_color;
 }
+*/

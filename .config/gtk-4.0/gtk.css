@@ -1,11 +1,11 @@
-.close > image {
+.close {
     color: @destructive_color;
 }
 
-.maximize > image {
+.maximize {
     color: @warning_color;
 }
 
-.minimize > image{
+.minimize {
     color: @success_color;
 }
