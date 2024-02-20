@@ -3,16 +3,14 @@
     background-color: @view_bg_color;
 }
 
-/*
 .close {
-    color: @destructive_color;
+    color: @destructive_bg_color;
 }
 
 .maximize {
-    color: @warning_color;
+    color: @warning_bg_color;
 }
 
 .minimize {
-    color: @success_color;
+    color: @success_bg_color;
 }
-*/

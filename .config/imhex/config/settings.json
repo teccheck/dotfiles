@@ -49,11 +49,11 @@
         "hex.builtin.setting.interface.scaling_factor": 0.0,
         "hex.builtin.setting.interface.simplified_welcome_screen": false,
         "hex.builtin.setting.interface.wiki_explain_language": "en",
-        "hex.builtin.setting.interface.window.height": 1012,
+        "hex.builtin.setting.interface.window.height": 1011,
         "hex.builtin.setting.interface.window.maximized": 1,
         "hex.builtin.setting.interface.window.width": 1920,
-        "hex.builtin.setting.interface.window.x": 1440,
-        "hex.builtin.setting.interface.window.y": 68
+        "hex.builtin.setting.interface.window.x": 0,
+        "hex.builtin.setting.interface.window.y": 0
     },
     "hex.builtin.setting.proxy": {
         "hex.builtin.setting.proxy.enable": false,

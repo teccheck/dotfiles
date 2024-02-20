@@ -2,16 +2,12 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-function fish_prompt -d "Write out the prompt"
-    set -l symbol '$'
-    set -l color $fish_color_cwd
+set turbofish false
 
-    if fish_is_root_user
-        set symbol '#'
-        set -q fish_color_cwd_root
-        and set color $fish_color_cwd_root
+function fish_prompt -d "Write out the prompt"    
+    if $turbofish
+        echo -n (set_color -o brblue)"::<"(set_color brblue; prompt_pwd;)(set_color bryellow; fish_vcs_prompt)(set_color -o brblue)">" (set_color normal)
+    else
+        echo -n (set_color brblue; prompt_pwd;)(set_color bryellow; fish_vcs_prompt)(set_color -o brblue) ">" (set_color normal)
     end
-
-    echo -n (set_color $color)$USER@$hostname(set_color normal):(set_color brblue; prompt_pwd;) $symbol (set_color normal)
-
 end
