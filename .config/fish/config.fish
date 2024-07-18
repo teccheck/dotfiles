@@ -3,6 +3,7 @@ if status is-interactive
 end
 
 set turbofish false
+thefuck --alias | source
 
 function fish_prompt -d "Write out the prompt"
     if $turbofish
@@ -13,7 +14,7 @@ function fish_prompt -d "Write out the prompt"
 end
 
 function gplr -d "Pull git repos recursively (with rebase)"
-    find -maxdepth 3 -name .git -type d -printf '\n'(set_color -o brblue)'%h:'(set_color normal)'\n' -execdir git pull --rebase ";"
+    find -maxdepth $argv -name .git -type d -printf '\n'(set_color -o brblue)'%h:'(set_color normal)'\n' -execdir git pull --rebase ";"
 end
 
 function colors -d "Show colors with their names in fish"
@@ -27,3 +28,8 @@ function colors -d "Show colors with their names in fish"
     end
     echo ""
 end
+
+function ytmdl -d "Download music from YTM"
+    yt-dlp -f bestaudio --extract-audio --add-metadata --parse-metadata "playlist_index:%(meta_track)s" -o "%(playlist_index)s %(artist)s - %(title)s.%(ext)s" $argv
+end
+
