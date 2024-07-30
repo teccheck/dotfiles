@@ -30,6 +30,6 @@ function colors -d "Show colors with their names in fish"
 end
 
 function ytmdl -d "Download music from YTM"
-    yt-dlp -f bestaudio --extract-audio --add-metadata --parse-metadata "playlist_index:%(meta_track)s" -o "%(playlist_index)s %(artist)s - %(title)s.%(ext)s" $argv
+    yt-dlp -f bestaudio --extract-audio --add-metadata --parse-metadata "playlist_index:%(meta_track)s" --output "%(album)s/%(playlist_index)s %(artist)s - %(title)s.%(ext)s" $argv
 end
 
