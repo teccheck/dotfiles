@@ -3,13 +3,19 @@ if status is-interactive
 end
 
 set turbofish false
+set __fish_git_prompt_showupstream verbose
+set __fish_git_prompt_showdirtystate true
+set __fish_git_prompt_color brpurple
+set __fish_git_prompt_color_bare bryellow
+set __fish_git_prompt_color_merging brred
+
 thefuck --alias | source
 
 function fish_prompt -d "Write out the prompt"
     if $turbofish
-        echo -n (set_color -o brblue)"::<"(set_color brblue; prompt_pwd;)(set_color bryellow; fish_vcs_prompt)(set_color -o brblue)">" (set_color normal)
+        echo -n (set_color -o brblue)"::<"(set_color brblue; prompt_pwd;)(fish_vcs_prompt;)(set_color -o brblue)">" (set_color normal)
     else
-        echo -n (set_color brblue; prompt_pwd;)(set_color brpurple; fish_vcs_prompt)(set_color -o brblue) ">" (set_color normal)
+        echo -n (set_color brblue; prompt_pwd;)(fish_vcs_prompt; set_color -o brblue;) ">" (set_color normal;)
     end
 end
 
