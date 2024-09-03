@@ -2,7 +2,7 @@
 #sidebarContents {
     background-color: @view_bg_color;
 }
-
+/*
 .close {
     color: @destructive_bg_color;
 }
@@ -14,3 +14,4 @@
 .minimize {
     color: @success_bg_color;
 }
+*/
