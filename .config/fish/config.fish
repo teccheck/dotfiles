@@ -20,7 +20,7 @@ function fish_prompt -d "Write out the prompt"
 end
 
 function gplr -d "Pull git repos recursively (with rebase)"
-    find -maxdepth $argv -name .git -type d -printf '\n'(set_color -o brblue)'%h:'(set_color normal)'\n' -execdir git pull --rebase ";"
+    find -maxdepth $argv[1] -name .git -type d -printf '\n'(set_color -o brblue)'%h:'(set_color normal)'\n' -execdir git pull $argv[2..-1] ";"
 end
 
 function colors -d "Show colors with their names in fish"
