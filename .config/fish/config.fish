@@ -9,7 +9,9 @@ set __fish_git_prompt_color brpurple
 set __fish_git_prompt_color_bare bryellow
 set __fish_git_prompt_color_merging brred
 
-pay-respects fish --alias | source
+if type -q "pay-respects"
+    pay-respects fish --alias | source
+end
 
 function fish_prompt -d "Write out the prompt"
     if $turbofish
