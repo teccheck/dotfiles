@@ -15,9 +15,9 @@ end
 
 function fish_prompt -d "Write out the prompt"
     if $turbofish
-        echo -n (set_color -o brblue)"::<"(set_color brgreen; prompt_hostname;) (set_color brblue; prompt_pwd;)(fish_vcs_prompt; set_color -o brblue;)">" (set_color normal;)
+        echo -n (set_color -o brblue)"::<"(set_color green; prompt_hostname;) (set_color brblue; prompt_pwd;)(fish_vcs_prompt; set_color -o brblue;)">" (set_color normal;)
     else
-        echo -n (set_color brgreen; prompt_hostname;) (set_color brblue; prompt_pwd;)(fish_vcs_prompt; set_color -o brblue;) ">" (set_color normal;)
+        echo -n (set_color green; prompt_hostname;) (set_color brblue; prompt_pwd;)(fish_vcs_prompt; set_color -o brblue;) ">" (set_color normal;)
     end
 end
 
