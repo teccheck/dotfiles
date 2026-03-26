@@ -25,6 +25,10 @@ function gplr -d "Pull git repos recursively (with rebase)"
     find -maxdepth $argv[1] -name .git -type d -printf '\n'(set_color -o brblue)'%h:'(set_color normal)'\n' -execdir git pull $argv[2..-1] ";"
 end
 
+function gstr -d "Satus git repos recursively"
+    find -maxdepth $argv[1] -name .git -type d -printf '\n'(set_color -o brblue)'%h:'(set_color normal)'\n' -execdir git status $argv[2..-1] ";"
+end
+
 function colors -d "Show colors with their names in fish"
     for color in black red green yellow blue purple cyan white
         echo -n (set_color -b $color)"  "$color"  "(set_color normal)
